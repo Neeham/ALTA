@@ -12,7 +12,7 @@ const BASEURL = env.api_root;
 export class ManageAuditsService {
   constructor(private http: HttpClient) {}
 
-  createAudit(inventoryItem): Observable<any> {
+  createAudit(inventoryItem: object): Observable<any> {
     return this.http.post(`${BASEURL}/audit/`, inventoryItem);
   }
 }
