@@ -45,16 +45,16 @@ export class ManageOrganizationsComponent implements OnInit {
     this.selected = 'All';
   }
 
-  //@ts-ignore
+  // @ts-ignore
   @ViewChild(MatPaginator) paginator: MatPaginator;
-  //@ts-ignore
+  // @ts-ignore
   @ViewChild(MatSort) sort: MatSort;
-  //@ts-ignore
+  // @ts-ignore
   @ViewChild('updateOrgDialog') updateOrgDialog: TemplateRef<any>;
-  //@ts-ignore
+  // @ts-ignore
   @ViewChild('createOrgDialog') createOrgDialog: TemplateRef<any>;
 
-  //@ts-ignore
+  // @ts-ignore
   @Input() isActive: string;
   activeStates = [{status: 'active'}, {status: 'disabled'}];
 
