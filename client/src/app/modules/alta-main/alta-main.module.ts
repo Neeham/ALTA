@@ -25,7 +25,7 @@ import { CreateAuditTemplateComponent } from '../../components/audit-template/cr
 import { EditAuditTemplateComponent } from '../../components/audit-template/edit-audit-template/edit-audit-template.component';
 import { AuditTemplateComponent, DeleteTemplateDialogComponent } from '../../components/audit-template/audit-template.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
-import {MAT_DATE_LOCALE, MatChipsModule, MatDatepickerModule, MatNativeDateModule} from '@angular/material';
+import {MAT_DATE_LOCALE, MatChipsModule, MatDatepickerModule, MatNativeDateModule, MatSortModule} from '@angular/material';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {CreateOrganizationComponent} from '../../components/manage-organizations/create-organization/create-organization.component';
 import {
@@ -53,22 +53,23 @@ import {
     DisableOrganizationDialogComponent
   ],
 
-    imports: [
-        CommonModule,
-        MatModule,
-        ReactiveFormsModule,
-        HttpClientModule,
-        RouterModule,
-        AuthModule,
-        FormsModule,
-        MatMenuModule,
-        MatDialogModule,
-        FlexLayoutModule,
-        MatDatepickerModule,
-        MatNativeDateModule,
-        MatChipsModule,
-        MatExpansionModule,
-    ],
+  imports: [
+    CommonModule,
+    MatModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    RouterModule,
+    AuthModule,
+    FormsModule,
+    MatMenuModule,
+    MatDialogModule,
+    FlexLayoutModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatChipsModule,
+    MatExpansionModule,
+    MatSortModule,
+  ],
   providers: [AuthService, ManageMembersService, ManageOrganizationsComponent, {provide: MAT_DATE_LOCALE, useValue: 'en-GB'} ],
 })
 export class AltaMainModule {
